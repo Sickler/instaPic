@@ -67,7 +67,7 @@
             self.emailField.text = @"";
             self.userNameField.text = @"";
             self.passwordField.text = @"";
-
+            NSLog(@" git is working hard");
 
             sender.enabled = NO;
         } completion:^(BOOL finished) {
