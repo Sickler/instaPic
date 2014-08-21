@@ -116,9 +116,13 @@
                                         block:^(PFUser *user, NSError *error) {
                                             if (user) {
                                                 NSLog(@"User logged in");
+                [self performSegueWithIdentifier:@"initialSegue" sender:self];
                                             } else {
-                                                NSLog(@"User can not log in");                                            }
+                                                NSLog(@"User can not log in");
+                                            }
                                         }];
+
+
 
     }
 
@@ -134,12 +138,14 @@
         user.username = self.userNameField.text;
         user.password = self.passwordField.text;
         user.email = self.emailField.text;
-        //user[@"lastName"] = self.lastNameField.text;
-        //user[@"firstName"] = self.firstNameField.text;
+        user[@"lastName"] = self.lastNameField.text;
+        user[@"firstName"] = self.firstNameField.text;
 
 
         [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
             if (!error) {
+
+                [self performSegueWithIdentifier:@"initialSegue" sender:self];
             }else {
                 NSString *errorString = [[error userInfo] objectForKey:@"error"];
                 UIAlertView *signupError = [[UIAlertView alloc] initWithTitle:@"Opps!"
@@ -158,7 +164,9 @@
     }
 
 
-
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+}
 
 
 

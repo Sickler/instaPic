@@ -34,6 +34,7 @@
 		0802F21619A2E5E400030333 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0802F20A19A2E5E400030333 /* Social.framework */; };
 		0802F21719A2E5E400030333 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0802F20B19A2E5E400030333 /* StoreKit.framework */; };
 		0802F21819A2E5E400030333 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0802F20C19A2E5E400030333 /* SystemConfiguration.framework */; };
+		081306FF19A54D6400F38FE9 /* PhotoCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081306FE19A54D6400F38FE9 /* PhotoCollectionViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		0802F20A19A2E5E400030333 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		0802F20B19A2E5E400030333 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		0802F20C19A2E5E400030333 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		081306FD19A54D6400F38FE9 /* PhotoCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewController.h; sourceTree = "<group>"; };
+		081306FE19A54D6400F38FE9 /* PhotoCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				0802F1D919A2E51000030333 /* AppDelegate.h */,
 				0802F1DA19A2E51000030333 /* AppDelegate.m */,
 				0802F1DC19A2E51000030333 /* Main.storyboard */,
+				081306FD19A54D6400F38FE9 /* PhotoCollectionViewController.h */,
+				081306FE19A54D6400F38FE9 /* PhotoCollectionViewController.m */,
 				0802F1DF19A2E51000030333 /* ViewController.h */,
 				0802F1E019A2E51000030333 /* ViewController.m */,
 				0802F1E219A2E51000030333 /* Images.xcassets */,
@@ -304,6 +309,7 @@
 				0802F1E119A2E51000030333 /* ViewController.m in Sources */,
 				0802F1DB19A2E51000030333 /* AppDelegate.m in Sources */,
 				0802F1D719A2E51000030333 /* main.m in Sources */,
+				081306FF19A54D6400F38FE9 /* PhotoCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

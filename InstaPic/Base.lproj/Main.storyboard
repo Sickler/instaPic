@@ -90,6 +90,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6GP-yL-EMw"/>
                     <connections>
                         <outlet property="createAccount" destination="eEi-oq-bSB" id="2j6-zY-9Wy"/>
                         <outlet property="emailField" destination="bUe-LV-LXM" id="cV2-fl-dzw"/>
@@ -99,13 +100,150 @@
                         <outlet property="logInLabel" destination="PIQ-ex-06n" id="WUY-Rq-XHJ"/>
                         <outlet property="passwordField" destination="asB-Tp-40S" id="5rj-CJ-hYM"/>
                         <outlet property="userNameField" destination="nZj-SR-sHs" id="qNW-bB-LZc"/>
+                        <segue destination="IJM-zL-wea" kind="modal" identifier="initialSegue" id="BYS-br-2uZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1144" y="194"/>
+        </scene>
+        <!--Photo Collection View Controller-->
+        <scene sceneID="MZC-cx-Bz4">
+            <objects>
+                <viewController id="HJR-AL-3Un" customClass="PhotoCollectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cdy-kb-3eD"/>
+                        <viewControllerLayoutGuide type="bottom" id="Lss-yw-OeR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vGx-LW-BTt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cU8-mk-pFY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="518"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="5bZ-O7-7n2">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" tag="1" image="Infinity" id="Mfv-RN-5rY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3AG-21-eNi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576" y="-476"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="uCi-qe-vpz">
+            <objects>
+                <tabBarController definesPresentationContext="YES" id="IJM-zL-wea" sceneMemberID="viewController">
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="fnB-8R-NDO">
+                        <rect key="frame" x="129" y="330" width="163" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="us7-hq-74i" kind="relationship" relationship="viewControllers" id="VsE-6X-MV9"/>
+                        <segue destination="HJR-AL-3Un" kind="relationship" relationship="viewControllers" id="xbH-oq-Iu3"/>
+                        <segue destination="bCb-2b-gJO" kind="relationship" relationship="viewControllers" id="K1o-et-Vnu"/>
+                        <segue destination="Vxc-la-Vcv" kind="relationship" relationship="viewControllers" id="Cn6-Fs-ok5"/>
+                        <segue destination="wZU-tX-5Ib" kind="relationship" relationship="viewControllers" id="UaE-sr-g0h"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ej2-oW-ey6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576" y="201"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cfg-yM-6G8">
+            <objects>
+                <viewController id="bCb-2b-gJO" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vAd-Fh-Xuc"/>
+                        <viewControllerLayoutGuide type="bottom" id="8d0-ur-X0m"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gfB-z8-0aY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Camera-2" id="xNz-Bc-4SZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rhK-k6-LKN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="-476"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="lZC-4s-KDA">
+            <objects>
+                <viewController id="us7-hq-74i" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HlW-5X-XaY"/>
+                        <viewControllerLayoutGuide type="bottom" id="dli-5J-0il"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qhM-p4-0L4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Home" id="OKb-ec-5N6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7PT-gy-gUf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1576" y="916"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="w94-bt-QPm">
+            <objects>
+                <viewController id="wZU-tX-5Ib" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5v7-87-qv1"/>
+                        <viewControllerLayoutGuide type="bottom" id="Vmk-8E-6Zo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AdX-tk-tgU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="User" id="4VR-gF-ye7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vvb-hl-qqY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="916"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aGD-mb-Wzz">
+            <objects>
+                <viewController id="Vxc-la-Vcv" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KF4-zk-MHE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y1j-GZ-8l8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j7R-sp-fgT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="" image="Jewel" id="n9Q-Bo-Jt8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ARB-u5-rzA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2141" y="194"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Camera-2" width="27" height="21"/>
+        <image name="Home" width="25" height="25"/>
+        <image name="Infinity" width="31" height="14"/>
+        <image name="Jewel" width="28" height="28"/>
+        <image name="User" width="25" height="31"/>
         <image name="logbg" width="744" height="1392"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
